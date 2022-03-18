@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Average Score</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <h3>{{avg}}</h3>
+  </ion-item>
+  <ion-item>
+    <ion-label>Test 1</ion-label>
+    <ion-input [(ngModel)]="test1" type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Test 2</ion-label>
+    <ion-input [(ngModel)]="test2" type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Test 3</ion-label>
+    <ion-input [(ngModel)]="test3" type ="number"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="calcAvg()">Calculate</ion-button>
+
+</ion-content>
